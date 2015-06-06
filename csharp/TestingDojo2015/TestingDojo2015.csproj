@@ -44,9 +44,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseTestFixture.cs" />
-    <Compile Include="ExampleTest.cs" />
+    <Compile Include="Base\BaseTestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Release1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
