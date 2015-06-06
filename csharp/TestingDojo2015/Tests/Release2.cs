@@ -25,11 +25,34 @@ namespace TestingDojo2015.Tests
             var tWindow = this.Driver.FindElementById("AddNewProductWindow");
             var nameAw = tWindow.FindElement(By.Id("NameAW"));
             nameAw.SendKeys("test");
+            var addButton = tWindow.FindElement(By.Id("AddAW"));
+            addButton.Click();
             var secondList = productsList.FindElements(By.ClassName("ListViewItem"));
             Assert.True(firstList.Count<secondList.Count);
 
 
                }
+
+        [Test]
+        public void SimpleAddTwoWords()
+        {
+            var mainWindow = this.Driver.FindElementById("MainWindow");
+
+            // var searchString = mainWindow.FindElement(By.Id("QueryMW"));
+            var productsList = mainWindow.FindElement(By.Id("ProductsMW"));
+            var firstList = productsList.FindElements(By.ClassName("ListViewItem"));
+            var addnew = mainWindow.FindElement(By.Id("AddNewProductMW"));
+            addnew.Click();
+            var tWindow = this.Driver.FindElementById("AddNewProductWindow");
+            var nameAw = tWindow.FindElement(By.Id("NameAW"));
+            nameAw.SendKeys("test test");
+            var addButton = tWindow.FindElement(By.Id("AddAW"));
+            addButton.Click();
+            var secondList = productsList.FindElements(By.ClassName("ListViewItem"));
+            Assert.True(firstList.Count < secondList.Count);
+
+
+        }
 
         [Test]
         public void IsDisplays()

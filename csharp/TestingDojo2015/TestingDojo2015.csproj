@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Release1.cs" />
     <Compile Include="Tests\Release2.cs" />
+    <Compile Include="Tests\Release3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
