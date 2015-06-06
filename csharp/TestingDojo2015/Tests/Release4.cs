@@ -52,7 +52,7 @@ namespace TestingDojo2015.Tests
             }
 
             str.Sort();
-
+           
             Assert.True(str.ElementAt(0) == firstList.ElementAt(0).GetAttribute("Name"));
             
             
