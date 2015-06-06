@@ -49,6 +49,7 @@
     <Compile Include="Tests\Release1.cs" />
     <Compile Include="Tests\Release2.cs" />
     <Compile Include="Tests\Release3.cs" />
+    <Compile Include="Tests\Release4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
